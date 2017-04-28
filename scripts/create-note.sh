@@ -11,8 +11,7 @@ curl "${API}${URL_PATH}" \
     "note": {
       "note_title": "'"${NT}"'",
       "note_detail": "'"${ND}"'",
-      "favorite": "'"${FAV}"'",
-      "user_id": "'"${UID}"'"
+      "favorite": "'"${FAV}"'"
     }
   }'
 
