@@ -1,10 +1,6 @@
 #!/bin/bash
 
-API="${API_ORIGIN:-http://localhost:4741}"
-URL_PATH="/sign-in"
-curl "${API}${URL_PATH}" \
-  --include \
-  --request POST \
+curl --include --request POST https://mynoteapi.herokuapp.com/sign-in \
   --header "Content-Type: application/json" \
   --data '{
     "credentials": {
@@ -12,5 +8,3 @@ curl "${API}${URL_PATH}" \
       "password": "'"${PASSWORD}"'"
     }
   }'
-
-echo
