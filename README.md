@@ -1,15 +1,16 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# rails-api-template
+## My Note API
 
-A template for starting projects with `rails-api`. Includes authentication.
+My Note API is the backend processor for the web application My Note. This API
+manages CRUD activities for user accounts and note items. The API also performs
+those activities with user authentication.
 
-At the beginning of each cohort, update the versions in [`Gemfile`](Gemfile).
+## Links
+-   [My Note API Service](https://mynoteapi.herokuapp.com/)
+-   [My Note Client](https://angmas.github.io/my-note-client/)
 
-## Dependencies
-
-Install with `bundle install`.
-
+## Technologies Used
 -   [`rails-api`](https://github.com/rails-api/rails-api)
 -   [`rails`](https://github.com/rails/rails)
 -   [`active_model_serializers`](https://github.com/rails-api/active_model_serializers)
@@ -22,15 +23,8 @@ version of Rails 4, as well as track `master` branches for `rails-api` and
 
 ## Installation
 
-1.  [Download](../../archive/master.zip) this template.
-1.  Unzip and rename the template directory.
-1.  Empty [`README.md`](README.md) and fill with your own content.
-1.  Move into the new project and `git init`.
+1.  Fork and clone this repository.
 1.  Install dependencies with `bundle install`.
-1.  Rename your app module in `config/application.rb` (change
-    `RailsApiTemplate`).
-1.  Rename your project database in `config/database.yml` (change
-    `'rails-api-template'`).
 1.  Create a `.env` for sensitive settings (`touch .env`).
 1.  Generate new `development` and `test` secrets (`bundle exec rake secret`).
 1.  Store them in `.env` with keys `SECRET_KEY_BASE_<DEVELOPMENT|TEST>`
@@ -46,9 +40,6 @@ version of Rails 4, as well as track `master` branches for `rails-api` and
 1.  Run the API server with `bin/rails server` or `bundle exec rails server`.
 
 ## Structure
-
-This template follows the standard project structure in Rails 4.
-
 `curl` command scripts are stored in [`scripts`](scripts) with names that
 correspond to API actions.
 
@@ -69,14 +60,6 @@ Developers should run these often!
 <!-- TODO -   `rake lint` checks your code for syntax errors. -->
 
 ## API
-
-Use this as the basis for your own API documentation. Add a new third-level
-heading for your custom entities, and follow the pattern provided for the
-built-in user authentication documentation.
-
-Scripts are included in [`scripts`](scripts) to test built-in actions. Add your
-own scripts to test your custom API. As an alternative, you can write automated
-tests in RSpec to test your API.
 
 ### Authentication
 
@@ -268,13 +251,107 @@ HTTP/1.1 200 OK
 Content-Type: application/json; charset=utf-8
 
 {
-  "user": {
-    "id": 2,
-    "email": "bob@ava.com"
-  }
+	"user": {
+		"id": 30,
+		"email": "a",
+		"notes": [
+			{
+				"id": 44,
+				"note_title": "another",
+				"note_detail": "note",
+				"favorite": false,
+				"created_at": "2017-05-03T06:33:43.704Z",
+				"updated_at": "2017-05-03T06:33:43.704Z"
+			},
+			{
+				"id": 16,
+				"note_title": "wan the april",
+				"note_detail": "with",
+				"favorite": false,
+				"created_at": "2017-05-02T11:57:15.699Z",
+				"updated_at": "2017-05-03T06:34:07.322Z"
+			},
+			{
+				"id": 17,
+				"note_title": "figuring out some code",
+				"note_detail": "very",
+				"favorite": false,
+				"created_at": "2017-05-02T12:09:08.440Z",
+				"updated_at": "2017-05-03T06:34:37.340Z"
+			},
+			{
+				"id": 42,
+				"note_title": "another",
+				"note_detail": "another4444",
+				"favorite": false,
+				"created_at": "2017-05-03T06:26:36.406Z",
+				"updated_at": "2017-05-03T08:13:41.140Z"
+			}
+		]
+	}
 }
 ```
 
+### Notes
+
+| Verb ---| URI Pattern | Controller#Action   |
+|---------|-------------|---------------------|
+| DELETE  | `/notes`    | `notes#destroy`     |
+| PATCH   | `/notes/1`  | `users#update`      |
+
+## DELETE /notes/:id
+Request:
+
+```sh
+API="${API_ORIGIN:-http://localhost:4741}"
+URL_PATH="/notes"
+curl "${API}${URL_PATH}/${ID}" \
+  --include \
+  --request DELETE \
+  --header "Content-Type: application/json" \
+  --header "Authorization: Token token=$TOKEN"
+```
+
+```sh
+ID=44 TOKEN=BAhJIiU0MjM3MzY5NGFjZjdlNmVjOWYyOThiODBhNjdmMTk2OAY6BkVG--cc0568b3b1310f3dd803cabcb4a20ff880bb58a7 sh scripts/destroy-note.sh
+```
+
+Response:
+
+```md
+HTTP/1.1 204 No Content
+```
+
+## PATCH /notes/:id
+Request:
+
+```sh
+API="${API_ORIGIN:-http://localhost:4741}"
+URL_PATH="/notes"
+curl "${API}${URL_PATH}/${ID}" \
+  --include \
+  --request PATCH \
+  --header "Content-Type: application/json" \
+  --header "Authorization: Token token=$TOKEN" \
+  --data '{
+    "note": {
+      "note_detail": "'"${ND}"'"
+    }
+  }'
+```
+
+```sh
+ID=42 TOKEN=BAhJIiU0MjM3MzY5NGFjZjdlNmVjOWYyOThiODBhNjdmMTk2OAY6BkVG--cc0568b3b1310f3dd803cabcb4a20ff880bb58a7 sh scripts/destroy-note.sh
+```
+
+Response:
+
+```md
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{"note":{"id":42,"note_title":"another","note_detail":"readme","favorite":false,"created_at":"2017-05-03T06:26:36.406Z","updated_at":"2017-05-03T12:26:06.379Z"}}
+```
 ### Reset Database without dropping
 
 This is not a task developers should run often, but it is sometimes necessary.
