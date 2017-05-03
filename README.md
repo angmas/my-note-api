@@ -280,217 +280,24 @@ Content-Type: application/json; charset=utf-8
 				"updated_at": "2017-05-03T06:34:37.340Z"
 			},
 			{
-				"id": 18,
-				"note_title": "why isn't it getting",
-				"note_detail": "to",
-				"favorite": false,
-				"created_at": "2017-05-02T12:11:31.596Z",
-				"updated_at": "2017-05-03T06:35:29.279Z"
-			},
-			{
-				"id": 45,
-				"note_title": "4556",
-				"note_detail": "234",
-				"favorite": false,
-				"created_at": "2017-05-03T06:40:13.688Z",
-				"updated_at": "2017-05-03T06:40:13.688Z"
-			},
-			{
-				"id": 19,
-				"note_title": "one more time 200",
-				"note_detail": "",
-				"favorite": false,
-				"created_at": "2017-05-02T12:13:59.392Z",
-				"updated_at": "2017-05-03T06:50:08.237Z"
-			},
-			{
-				"id": 46,
-				"note_title": "chekced",
-				"note_detail": "",
-				"favorite": true,
-				"created_at": "2017-05-03T06:54:38.135Z",
-				"updated_at": "2017-05-03T06:54:38.135Z"
-			},
-			{
-				"id": 20,
-				"note_title": "testing",
-				"note_detail": "test",
-				"favorite": null,
-				"created_at": "2017-05-02T13:11:10.885Z",
-				"updated_at": "2017-05-03T06:57:29.987Z"
-			},
-			{
-				"id": 21,
-				"note_title": "after refactoring modal",
-				"note_detail": "",
-				"favorite": null,
-				"created_at": "2017-05-02T13:15:18.723Z",
-				"updated_at": "2017-05-03T07:00:19.812Z"
-			},
-			{
-				"id": 23,
-				"note_title": "for the issue",
-				"note_detail": "for",
-				"favorite": true,
-				"created_at": "2017-05-02T13:29:55.068Z",
-				"updated_at": "2017-05-03T07:02:58.262Z"
-			},
-			{
-				"id": 24,
-				"note_title": "test ",
-				"note_detail": "test",
-				"favorite": true,
-				"created_at": "2017-05-02T14:08:08.310Z",
-				"updated_at": "2017-05-03T07:05:05.529Z"
-			},
-			{
-				"id": 25,
-				"note_title": "check rails",
-				"note_detail": "",
-				"favorite": true,
-				"created_at": "2017-05-02T15:43:51.171Z",
-				"updated_at": "2017-05-03T07:07:42.582Z"
-			},
-			{
-				"id": 29,
-				"note_title": "not checked",
-				"note_detail": "yes",
-				"favorite": true,
-				"created_at": "2017-05-02T23:53:41.285Z",
-				"updated_at": "2017-05-03T07:10:00.306Z"
-			},
-			{
-				"id": 13,
-				"note_title": "checkbox woes",
-				"note_detail": "",
-				"favorite": true,
-				"created_at": "2017-05-02T11:20:18.176Z",
-				"updated_at": "2017-05-03T07:10:50.873Z"
-			},
-			{
-				"id": 47,
-				"note_title": "will ui2 work?",
-				"note_detail": "",
-				"favorite": true,
-				"created_at": "2017-05-03T07:13:45.592Z",
-				"updated_at": "2017-05-03T07:13:45.592Z"
-			},
-			{
-				"id": 48,
-				"note_title": "note not checked",
-				"note_detail": "",
-				"favorite": false,
-				"created_at": "2017-05-03T07:14:20.637Z",
-				"updated_at": "2017-05-03T07:14:20.637Z"
-			},
-			{
-				"id": 49,
-				"note_title": "note checked",
-				"note_detail": "x",
-				"favorite": true,
-				"created_at": "2017-05-03T07:14:38.293Z",
-				"updated_at": "2017-05-03T07:14:38.293Z"
-			},
-			{
-				"id": 50,
-				"note_title": "dasdf",
-				"note_detail": "asdfsd",
-				"favorite": true,
-				"created_at": "2017-05-03T07:18:21.261Z",
-				"updated_at": "2017-05-03T07:18:21.261Z"
-			},
-			{
-				"id": 31,
-				"note_title": "will ui2 work?",
-				"note_detail": "",
-				"favorite": true,
-				"created_at": "2017-05-03T01:10:25.991Z",
-				"updated_at": "2017-05-03T07:25:53.908Z"
-			},
-			{
-				"id": 51,
-				"note_title": "button check",
-				"note_detail": "",
-				"favorite": true,
-				"created_at": "2017-05-03T07:47:48.047Z",
-				"updated_at": "2017-05-03T07:47:48.047Z"
-			},
-			{
-				"id": 35,
-				"note_title": "asdf",
-				"note_detail": "asfdd",
-				"favorite": false,
-				"created_at": "2017-05-03T05:52:49.510Z",
-				"updated_at": "2017-05-03T07:48:22.907Z"
-			},
-			{
-				"id": 52,
-				"note_title": "asdf",
-				"note_detail": "",
-				"favorite": true,
-				"created_at": "2017-05-03T08:12:02.846Z",
-				"updated_at": "2017-05-03T08:12:02.846Z"
-			},
-			{
-				"id": 37,
-				"note_title": "will this fruit",
-				"note_detail": "jkly",
-				"favorite": true,
-				"created_at": "2017-05-03T06:13:13.064Z",
-				"updated_at": "2017-05-03T08:12:35.265Z"
-			},
-			{
-				"id": 38,
-				"note_title": "ert",
-				"note_detail": "ertttt",
-				"favorite": false,
-				"created_at": "2017-05-03T06:15:24.463Z",
-				"updated_at": "2017-05-03T08:12:53.389Z"
-			},
-			{
-				"id": 39,
-				"note_title": "zzzttt",
-				"note_detail": "zzyyyy",
-				"favorite": false,
-				"created_at": "2017-05-03T06:18:50.404Z",
-				"updated_at": "2017-05-03T08:13:04.152Z"
-			},
-			{
-				"id": 40,
-				"note_title": "f",
-				"note_detail": "fff",
-				"favorite": false,
-				"created_at": "2017-05-03T06:20:17.668Z",
-				"updated_at": "2017-05-03T08:13:12.121Z"
-			},
-			{
 				"id": 42,
 				"note_title": "another",
 				"note_detail": "another4444",
 				"favorite": false,
 				"created_at": "2017-05-03T06:26:36.406Z",
 				"updated_at": "2017-05-03T08:13:41.140Z"
-			},
-			{
-				"id": 53,
-				"note_title": "hunter",
-				"note_detail": "",
-				"favorite": true,
-				"created_at": "2017-05-03T08:13:51.208Z",
-				"updated_at": "2017-05-03T08:13:51.208Z"
-			},
-			{
-				"id": 41,
-				"note_title": "1111test",
-				"note_detail": "1111test",
-				"favorite": false,
-				"created_at": "2017-05-03T06:26:27.719Z",
-				"updated_at": "2017-05-03T08:14:09.684Z"
 			}
 		]
 	}
 }
 ```
+
+### Notes
+
+| Verb ---| URI Pattern | Controller#Action   |
+|---------|-------------|---------------------|
+| DELETE  | `/notes`    | `notes#destroy`     |
+| PATCH   | `/notes/1`  | `users#update`      |
 
 ## DELETE /notes/:id
 Request:
