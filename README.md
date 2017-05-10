@@ -9,6 +9,7 @@ those activities with user authentication.
 ## Links
 -   [My Note API Service](https://mynoteapi.herokuapp.com/)
 -   [My Note Client](https://angmas.github.io/my-note-client/)
+-   [My Note Client Repository](https://github.com/angmas/my-note-client)
 
 ## Technologies Used
 -   [`rails-api`](https://github.com/rails-api/rails-api)
