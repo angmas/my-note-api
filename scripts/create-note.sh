@@ -1,5 +1,6 @@
 #!/bin/bash
-# NT=note1 ND='this is a note' FAV=false UID=1 TOKEN= sh scripts/create-note.sh
+# NT=note1 ND='this is a note' FAV=false UID=1
+TOKEN="BAhJIiVmYzFjZDE0NjZjMDY2ZGMxMDYzNGMxMzY1MzIwODM4NQY6BkVG--c599a06e3844c6edcba686dc689a8d393ebc4731"
 API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/notes"
 curl "${API}${URL_PATH}" \
